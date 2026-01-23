@@ -9,5 +9,7 @@ public class TheNewYear {
         int abs3 = Math.abs(x1 - x3);
         int res = Math.max(abs1, Math.max(abs2, abs3));
         System.out.println(res);
+
+        // change made
     }
 }
