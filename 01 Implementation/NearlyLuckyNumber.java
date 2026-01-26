@@ -3,16 +3,26 @@ import java.util.Scanner;
 public class NearlyLuckyNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        while (n!=0) {
-            int rem = n % 10;
-            if(rem != 4 && rem != 7) {
+        String s = sc.nextLine();
+        int cnt4 = 0;
+        int cnt7 = 0;
+        for(char c : s.toCharArray()) {
+            if(c != '4' && c != '7') {
                 System.out.println("NO");
+                sc.close();
                 return;
             }
-            n = n / 10;
+            if(c == '4') {
+                cnt4++;
+            }else if (c == '7') {
+                cnt7++;
+            }
         }
-        System.out.println("YES");
+        if(cnt4>0&&cnt7>0) {
+            System.out.println("YES");
+        }else {
+            System.out.println("NO");
+        }
         sc.close();
     }
 }

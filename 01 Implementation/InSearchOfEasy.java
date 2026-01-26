@@ -11,9 +11,10 @@ public class InSearchOfEasy {
                 System.out.println("HARD");
                 return;
             }
+            n--;
         }
         System.out.println("EASY");
         sc.close();
-
+// .. 
     }
 }

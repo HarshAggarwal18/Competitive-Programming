@@ -17,6 +17,8 @@ public class Presents {
             ans[a[i] - 1] = i + 1;
         }
 
-        System.out.println(Arrays.toString(ans));
+        for (int i = 0; i < n; i++) {
+            System.out.print(ans[i] + " ");
+        }
     }
 }
