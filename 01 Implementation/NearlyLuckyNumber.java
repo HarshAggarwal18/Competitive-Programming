@@ -15,7 +15,7 @@ public class NearlyLuckyNumber {
 
         if (count == 4 || count == 7) {
             System.out.println("YES");
-        } else {
+        } else{
             System.out.println("NO");
         }
     }
